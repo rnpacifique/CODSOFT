@@ -1,3 +1,6 @@
+
+
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -21,6 +24,7 @@ header {
     background: #333;
     color: #fff;
     padding: 20px 0;
+    overflow: hidden;
 }
 
 header .logo {
@@ -47,7 +51,8 @@ header ul li a {
 
 /* Hero Section */
 .hero {
-    background: #f4f4f4;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
     padding: 100px 0;
     text-align: center;
 }
@@ -72,7 +77,18 @@ header ul li a {
 }
 
 .services .service {
-    margin: 20px 0;
+    width: 45%;
+    display: inline-block;
+    margin: 20px 2.5%;
+    text-align: left;
+}
+
+.services .service.left {
+    float: left;
+}
+
+.services .service.right {
+    float: right;
 }
 
 /* About Us Section */
@@ -158,5 +174,3 @@ footer .social-media li a {
     color: #fff;
     text-decoration: none;
 }
-
-
